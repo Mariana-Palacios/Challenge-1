@@ -1,0 +1,49 @@
+@import './variables';
+@import './functions';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $raleway;
+}
+
+.container{
+    display: flex;
+    padding: 42px 123px 25px 154px;
+    height: 1023px;
+    .aside{
+        width: 35%;
+        height: auto;
+        background-color: $blue;
+    }
+    .button{
+        display: flex;
+        justify-content: space-between;
+        &__search{
+            background-color: $grey;
+            border: 1px solid $grey;
+            width: 161px;
+            height: 40px;
+            color: $ligth-grey;
+        }
+        &__circle{
+            border-radius: 50%;
+            background-color: $grey;
+        }
+    }
+    .main{
+        background-color: $dark-blue;
+        width: 70%;
+        .degrees{
+            display: flex;
+            justify-content: flex-end;
+            &__f{
+                @include deegres-circle($dark-blue, $ligth-grey);
+            }
+            &__c{
+                @include deegres-circle($white, $grey-blue);
+            }
+        }
+    }
+}

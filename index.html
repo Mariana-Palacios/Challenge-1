@@ -4,9 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Challenge</title>
 </head>
 <body>
-    <h1>hello world</h1>
+    <div class="container">
+        <aside class="aside">
+            <div class="button">
+                <button class="button__search">Search for places</button>
+                <button class="button__circle"></button>
+            </div>
+        </aside>
+        <main class="main">
+            <div class="degrees">
+                <div class="degrees__c">ºC</div>
+                <div class="degrees__f">ºF</div>
+            </div>
+            <section class="weather">
+                <div class="weather__day">
+                    <p class="weather__day--tomorrow">Tomorrow</p>
+                    <img src="" alt="" class="weather__day--img" id="time__tomorrow" >
+                    <div class="weather__temperature">
+                        <p class="weather__temperature--ligth"></p>
+                        <p class="weather__temperature--dark"></p>
+                    </div>
+                </div>
+                <div class="weather__day">
+                    <p class="weather__day--dayOne"></p>
+                    <img src="" alt="" class="weather__day--img" id="time__one" >
+                    <div class="weather__temperature">
+                        <p class="weather__temperature--ligth"></p>
+                        <p class="weather__temperature--dark"></p>
+                    </div>
+                </div>
+                <div class="weather__day">
+                    <p class="weather__day--dayTwo"></p>
+                    <img src="" alt="" class="weather__day--img" id="time__two" >
+                    <div class="weather__temperature">
+                        <p class="weather__temperature--ligth"></p>
+                        <p class="weather__temperature--dark"></p>
+                    </div>
+                </div>
+                <div class="weather__day">
+                    <p class="weather__day--dayThree"></p>
+                    <img src="" alt="" class="weather__day--img" id="time__three" >
+                    <div class="weather__temperature">
+                        <p class="weather__temperature--ligth"></p>
+                        <p class="weather__temperature--dark"></p>
+                    </div>
+                </div>
+                <div class="weather__day">
+                    <p class="weather__day--dayFour"></p>
+                    <img src="" alt="" class="weather__day--img" id="time__four" >
+                    <div class="weather__temperature">
+                        <p class="weather__temperature--ligth"></p>
+                        <p class="weather__temperature--dark"></p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Today’s Hightlights</h2>
+
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </div>
 </body>
 </html>
