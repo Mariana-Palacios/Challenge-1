@@ -16,9 +16,26 @@
   background-color: #1E213A;
 }
 .container .aside .information {
+  font-size: 18px;
   color: #88869D;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .aside .information__weather {
+  font-size: 36px !important;
+  font-weight: bold;
+  margin-bottom: 82px;
+}
+.container .aside .information__day {
+  font-size: 90px;
+  padding-bottom: 87px;
+  color: #fff;
+  font-weight: bold;
+}
+.container .aside .information__day .degree__type {
+  color: #88869D;
+  font-size: 40px;
 }
 .container .aside .information i {
   padding-right: 9px;
@@ -81,6 +98,7 @@
 .container .main .weather {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .container .main .weather__day {
   background-color: #1E213A;
@@ -96,4 +114,23 @@
 .container .main .weather__day:hover {
   background-color: #fff;
   color: #100E1D !important;
+}
+.container .main .hightlights {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .main .hightlights__container {
+  display: flex;
+  padding: 48px 48px 48px 0px;
+}
+.container .main .hightlights__container .container__up {
+  width: 328px;
+  height: 159px;
+  background-color: #1E213A;
+}
+.container .main .hightlights__container .container__down {
+  width: 328px;
+  height: 159px;
+  background-color: #1E213A;
 }/*# sourceMappingURL=style.css.map */

@@ -16,9 +16,26 @@
         height: auto;
         background-color: $blue;
         .information{
+            font-size: 18px;
             color: $aside-grey;
             display: flex;
-            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            &__weather{
+                font-size: 36px !important;
+                font-weight: bold;
+                margin-bottom: 82px;
+            }
+            &__day{
+                font-size: 90px;
+                padding-bottom:87px;
+                color: $white;
+                font-weight: bold;
+                .degree__type{
+                    color: $aside-grey;
+                    font-size: 40px;
+                }
+            }
             i{
                 padding-right: 9px;
             }
@@ -71,6 +88,7 @@
         .weather{
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             &__day{
                 background-color: $blue;
                 width: 120px;
@@ -85,6 +103,25 @@
             &__day:hover{
                 background-color: $white;
                 color: $dark-blue !important;
+            }
+        }
+        .hightlights{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__container{
+                display: flex;
+                padding: 48px 48px 48px 0px;
+                .container__up{
+                    width: 328px;
+                    height: 159px;
+                    background-color: $blue;
+                }
+                .container__down{
+                    width: 328px;
+                    height: 159px;
+                    background-color: $blue;
+                }
             }
         }
     }
