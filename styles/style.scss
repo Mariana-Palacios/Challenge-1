@@ -10,39 +10,81 @@
 
 .container{
     display: flex;
-    padding: 42px 123px 25px 154px;
     height: 1023px;
     .aside{
         width: 35%;
         height: auto;
         background-color: $blue;
+        .information{
+            color: $aside-grey;
+            display: flex;
+            justify-content: center;
+            i{
+                padding-right: 9px;
+            }
+            p{
+                font-weight: 600;
+            }
+        }
     }
     .button{
         display: flex;
         justify-content: space-between;
+        padding: 42px;
         &__search{
             background-color: $grey;
             border: 1px solid $grey;
             width: 161px;
             height: 40px;
             color: $ligth-grey;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        &__search:hover{
+            background-color: $white;
+            border: 1px solid $white;
+            color: $dark-blue !important;
         }
         &__circle{
             border-radius: 50%;
             background-color: $grey;
+            height: 40px;
+            width: 40px;
         }
     }
     .main{
+        color: $white;
+        padding: 42px 123px 25px 154px;
         background-color: $dark-blue;
         width: 70%;
         .degrees{
             display: flex;
             justify-content: flex-end;
             &__f{
-                @include deegres-circle($dark-blue, $ligth-grey);
+                @include deegres-circle($dark-blue !important, $ligth-grey);
             }
             &__c{
                 @include deegres-circle($white, $grey-blue);
+                margin-right: 12px;
+            }
+        }
+        .weather{
+            display: flex;
+            justify-content: center;
+            &__day{
+                background-color: $blue;
+                width: 120px;
+                height: 177px;
+                margin: 66px 26px 72px 0px;
+                display: flex;
+                justify-content: center;
+                &--tomorrow{
+                    font-weight: bold;
+                }
+            }
+            &__day:hover{
+                background-color: $white;
+                color: $dark-blue !important;
             }
         }
     }

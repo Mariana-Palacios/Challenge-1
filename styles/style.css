@@ -8,7 +8,6 @@
 
 .container {
   display: flex;
-  padding: 42px 123px 25px 154px;
   height: 1023px;
 }
 .container .aside {
@@ -16,9 +15,21 @@
   height: auto;
   background-color: #1E213A;
 }
+.container .aside .information {
+  color: #88869D;
+  display: flex;
+  justify-content: center;
+}
+.container .aside .information i {
+  padding-right: 9px;
+}
+.container .aside .information p {
+  font-weight: 600;
+}
 .container .button {
   display: flex;
   justify-content: space-between;
+  padding: 42px;
 }
 .container .button__search {
   background-color: #6E707A;
@@ -26,12 +37,23 @@
   width: 161px;
   height: 40px;
   color: #E7E7EB;
+  font-size: 16px;
+  font-weight: 700;
+}
+.container .button__search:hover {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #100E1D !important;
 }
 .container .button__circle {
   border-radius: 50%;
   background-color: #6E707A;
+  height: 40px;
+  width: 40px;
 }
 .container .main {
+  color: #fff;
+  padding: 42px 123px 25px 154px;
   background-color: #100E1D;
   width: 70%;
 }
@@ -40,7 +62,7 @@
   justify-content: flex-end;
 }
 .container .main .degrees__f {
-  color: #100E1D;
+  color: #100E1D !important;
   background-color: #E7E7EB;
   border-radius: 50%;
   height: 40px;
@@ -54,4 +76,24 @@
   height: 40px;
   width: 40px;
   font-weight: 900;
+  margin-right: 12px;
+}
+.container .main .weather {
+  display: flex;
+  justify-content: center;
+}
+.container .main .weather__day {
+  background-color: #1E213A;
+  width: 120px;
+  height: 177px;
+  margin: 66px 26px 72px 0px;
+  display: flex;
+  justify-content: center;
+}
+.container .main .weather__day--tomorrow {
+  font-weight: bold;
+}
+.container .main .weather__day:hover {
+  background-color: #fff;
+  color: #100E1D !important;
 }/*# sourceMappingURL=style.css.map */
