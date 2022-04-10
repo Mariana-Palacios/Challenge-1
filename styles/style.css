@@ -377,6 +377,25 @@
   margin-bottom: 15px;
   font-size: 16px;
 }
+.container .main .hightlights__container .container__up .progressBar, .container .main .hightlights__container .container__up .progressBarNumbers, .container .main .hightlights__container .container__up .progressPorcentage {
+  width: 229px;
+  height: 8px;
+}
+.container .main .hightlights__container .container__up .progressBar {
+  margin-top: 15px;
+  background-color: #E7E7EB;
+  border-radius: 4px;
+}
+.container .main .hightlights__container .container__up .progressPorcentage {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+.container .main .hightlights__container .container__up .progressBarNumbers {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
 .container .main .hightlights__container .container__up .values {
   display: flex;
 }

@@ -321,6 +321,25 @@
                         margin-bottom: 15px;
                         font-size: 16px;
                     }
+                    .progressBar, .progressBarNumbers, .progressPorcentage{
+                        width: 229px;
+                        height: 8px;
+                    }
+                    .progressBar{
+                        margin-top: 15px;
+                        background-color: $ligth-grey;
+                        border-radius: 4px;
+                    }
+                    .progressPorcentage{
+                        margin-top: 5px;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                    .progressBarNumbers{
+                        margin-top: 15px;
+                        display: flex;
+                        justify-content: space-between;
+                    }
                     .values{
                         display: flex;
                         p{

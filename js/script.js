@@ -126,7 +126,7 @@ weatherImages(woeid, time__tomorrow, ligth__tomorrow, dark__tomorrow, 1,)
 weatherImages(woeid, time__one, ligth__one, dark__one, 2)
 weatherImages(woeid, time__two, ligth__two, dark__two, 3)
 weatherImages(woeid, time__three, ligth__three, dark__three, 1)
-weatherImages(woeid, time__four, ligth__four, dark__four, 2)
+weatherImages(woeid, time__four, ligth__four, dark__four, 1)
 
 
 weatherInformation(woeid)
