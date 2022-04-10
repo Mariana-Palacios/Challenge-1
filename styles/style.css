@@ -132,12 +132,12 @@
   color: #1E213A;
 }
 .container .aside__button .list .location:hover {
-  border: 1px solid #444457;
+  border: 1px solid #E7E7EB;
   cursor: -webkit-grab;
   cursor: grab;
 }
 .container .aside__button .list .location:hover .fa-solid.fa-angle-right {
-  color: #444457;
+  color: #E7E7EB;
   position: absolute;
   right: 10%;
 }
@@ -193,7 +193,7 @@
   border: 1px solid #6E707A;
   width: 161px;
   height: 40px;
-  color: #444457;
+  color: #E7E7EB;
   font-size: 16px;
   font-weight: 700;
 }
@@ -250,7 +250,7 @@
 }
 .container .main .degrees__f {
   color: #100E1D !important;
-  background-color: #444457;
+  background-color: #E7E7EB;
   border-radius: 50%;
   height: 40px;
   width: 40px;
@@ -313,7 +313,7 @@
   flex-direction: row-reverse;
 }
 .container .main .weather__day .weather__temperature--ligth {
-  color: #444457;
+  color: #E7E7EB;
   margin: 8px;
 }
 .container .main .weather__day .weather__temperature--dark {
@@ -383,7 +383,7 @@
 }
 .container .main .hightlights__container .container__up .progressBar {
   margin-top: 15px;
-  background-color: #444457;
+  background-color: #E7E7EB;
   border-radius: 4px;
 }
 .container .main .hightlights__container .container__up .progressBar__progress {
