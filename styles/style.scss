@@ -87,7 +87,7 @@
         }
     }
     .aside__button{
-        width: 35%;
+        width: 33%;
         height: 1023px;
         background-color: $blue;
         position: absolute;
@@ -100,6 +100,7 @@
             margin-top: 58px;
             .location{
                 list-style:none;
+                padding-left: 10px;
                 color: $white;
                 width: 100%;
                 height: 64px;
@@ -125,6 +126,7 @@
     .aside__button.is-active{
         padding: 20px 46px 0px 46px;
         transform: translate(0,0%);
+        transition: all 0.3s ease;
         .fa-solid.fa-x{
             color: $white;
             position: absolute;
