@@ -1,6 +1,41 @@
 // get the day 
 let date = new Date()
 
+const aside__button = document.querySelector('.aside__button');
+
+const isActive=()=> {
+    aside__button.classList.toggle("is-active");
+}
+
+// true = celsius ; false = faren
+let celsius = true
+let fahrenheit = false
+
+const degrees__c = document.querySelector('#degrees__c')
+const degrees__f = document.querySelector('#degrees__f')
+
+const changeTemperature=(option)=> {
+    if(option == 'celsius' && celsius == true){
+        celsius = true;
+        fahrenheit = false;
+        console.log('celsius')
+    }else if(option == 'celsius' && celsius == false){
+        celsius = true;
+        fahrenheit = false;
+        console.log('celsius')
+    }else if(option == 'fahrenheit' && fahrenheit == true){
+        fahrenheit = true;
+        celsius = false;
+        console.log('fahrenheit')
+    }else{
+        fahrenheit = true;
+        celsius = false;
+        console.log('fahrenheit')
+    }
+}
+
+
+// obtener dias siguientes respecto a la fecha actual
 function sumarDias(date, dias){
     date.setDate(date.getDate() + dias);
     let day = date.getDate()
@@ -48,7 +83,7 @@ const dark__four = document.querySelector('#dark__four')
 // 
 let woeid = '44418' 
 
-let daysImgId = [time__today, time__tomorrow, time__one, time__two, time__three, time__four] 
+// let daysImgId = [time__today, time__tomorrow, time__one, time__two, time__three, time__four] 
 
 
 const weatherImage = (weather, image ) => {
@@ -62,7 +97,6 @@ const weatherInformation = async(woeidUser , humidity , wind , visibility, press
     const weather = await responseApi.json()
 
     // adding today values
-    console.log(weather[0]['humidity'])
     humidity.innerHTML = weather[0]['humidity']
     wind.innerHTML = Math.trunc(weather[0]['wind_speed'])
     visibility.innerHTML = weather[0]['visibility'].toFixed(1)
@@ -77,13 +111,18 @@ const weatherImages = async(woeidUser, todayImg, minTem, maxTem, n) =>{
     const responseApi = await fetch(url)
     const weather = await responseApi.json()
     weatherImage(weather[0]['weather_state_abbr'],todayImg);
-    minTem.innerHTML = `${Math.trunc(weather[0]['min_temp'])}ºC`
-    maxTem.innerHTML = `${Math.trunc(weather[0]['max_temp'])}ºC`
+    if(celsius==true){
+        minTem.innerHTML = `${Math.trunc(weather[0]['min_temp'])}ºC`
+        maxTem.innerHTML = `${Math.trunc(weather[0]['max_temp'])}ºC`
+    }else{
+        minTem.innerHTML = `${Math.trunc(weather[0]['min_temp'])+32}ºF`
+        maxTem.innerHTML = `${Math.trunc(weather[0]['max_temp'])+32}ºF`
+    }
 }
 
 weatherInformation(woeid, today_humidity, today_wind, today_visibility, today_pressure, time__today)
 
-weatherImages(woeid, time__tomorrow, ligth__tomorrow, dark__tomorrow, 1)
+weatherImages(woeid, time__tomorrow, ligth__tomorrow, dark__tomorrow, 1,)
 weatherImages(woeid, time__one, ligth__one, dark__one, 2)
 weatherImages(woeid, time__two, ligth__two, dark__two, 3)
 weatherImages(woeid, time__three, ligth__three, dark__three, 1)

@@ -12,7 +12,7 @@
     <div class="container">
         <aside class="aside">
             <div class="button">
-                <button class="button__search">Search for places</button>
+                <button class="button__search" onclick="isActive()">Search for places</button>
                 <button class="button__circle"><i class="fa-solid fa-location-crosshairs"></i></button>
             </div>
             <div class="weatherImg">
@@ -30,10 +30,17 @@
                 </div>
             </div>
         </aside>
+        <aside class="aside__button">
+            <i class="fa-solid fa-x" onclick="isActive()"></i>
+            <div class="inputBox">
+                <input class="inputBox__input" type="email" name="" id="" placeholder="Search location">
+                <button class="inputBox__button">Search</button>
+            </div>
+        </aside>
         <main class="main">
             <div class="degrees">
-                <div class="degrees__c">ºC</div>
-                <div class="degrees__f">ºF</div>
+                <div class="degrees__c" id="degrees__c" onclick="changeTemperature('celsius')">ºC</div>
+                <div class="degrees__f" id="degrees__f" onclick="changeTemperature('fahrenheit')">ºF</div>
             </div>
             <section class="weather">
                 <div class="weather__day">
