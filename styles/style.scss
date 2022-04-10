@@ -176,7 +176,7 @@
             width: 100%;
             // height: 1718px;
             height: 1758px;
-            padding: 52px 55px;
+            padding: 52px 52px;
         }
         .tittle{
             margin-left: 12%;
@@ -260,7 +260,8 @@
                     flex-direction: column;
                     padding: 0px;
                     .container__down, .container__up{
-                        margin: 32px 24px;
+                        // margin: 32px 24px;
+                        margin: 32px 0px;
                     }
                 }
                 h2{

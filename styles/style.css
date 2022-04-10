@@ -201,7 +201,7 @@
   .container .main {
     width: 100%;
     height: 1758px;
-    padding: 52px 55px;
+    padding: 52px 52px;
   }
 }
 .container .main .tittle {
@@ -313,7 +313,7 @@
     padding: 0px;
   }
   .container .main .hightlights__container .container__down, .container .main .hightlights__container .container__up {
-    margin: 32px 24px;
+    margin: 32px 0px;
   }
 }
 .container .main .hightlights__container h2 {
