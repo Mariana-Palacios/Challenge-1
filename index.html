@@ -13,7 +13,7 @@
         <aside class="aside">
             <div class="button">
                 <button class="button__search">Search for places</button>
-                <button class="button__circle"></button>
+                <button class="button__circle"><i class="fa-solid fa-location-crosshairs"></i></button>
             </div>
             <div class="weatherImg">
                 <img src="" alt="" class="time__today" id="time__today">
@@ -40,40 +40,40 @@
                     <p class="weather__day--tomorrow">Tomorrow</p>
                     <img src="" alt="" class="weather__day--img" id="time__tomorrow" >
                     <div class="weather__temperature">
-                        <p class="weather__temperature--ligth"></p>
-                        <p class="weather__temperature--dark"></p>
+                        <p class="weather__temperature--ligth" id="ligth__tomorrow"></p>
+                        <p class="weather__temperature--dark" id="dark__tomorrow"></p>
                     </div>
                 </div>
                 <div class="weather__day">
                     <p class="weather__day--dayOne"></p>
                     <img src="" alt="" class="weather__day--img" id="time__one" >
                     <div class="weather__temperature">
-                        <p class="weather__temperature--ligth"></p>
-                        <p class="weather__temperature--dark"></p>
+                        <p class="weather__temperature--ligth" id="ligth__one"></p>
+                        <p class="weather__temperature--dark" id="dark__one"></p>
                     </div>
                 </div>
                 <div class="weather__day">
                     <p class="weather__day--dayTwo"></p>
                     <img src="" alt="" class="weather__day--img" id="time__two" >
                     <div class="weather__temperature">
-                        <p class="weather__temperature--ligth"></p>
-                        <p class="weather__temperature--dark"></p>
+                        <p class="weather__temperature--ligth" id="ligth__two"></p>
+                        <p class="weather__temperature--dark" id="dark__two"></p>
                     </div>
                 </div>
                 <div class="weather__day">
                     <p class="weather__day--dayThree"></p>
                     <img src="" alt="" class="weather__day--img" id="time__three" >
                     <div class="weather__temperature">
-                        <p class="weather__temperature--ligth"></p>
-                        <p class="weather__temperature--dark"></p>
+                        <p class="weather__temperature--ligth" id="ligth__three"></p>
+                        <p class="weather__temperature--dark" id="dark__three"></p>
                     </div>
                 </div>
                 <div class="weather__day">
                     <p class="weather__day--dayFour"></p>
                     <img src="" alt="" class="weather__day--img" id="time__four" >
                     <div class="weather__temperature">
-                        <p class="weather__temperature--ligth"></p>
-                        <p class="weather__temperature--dark"></p>
+                        <p class="weather__temperature--ligth" id="ligth__four"></p>
+                        <p class="weather__temperature--dark" id="dark__four"></p>
                     </div>
                 </div>
             </section>
@@ -82,17 +82,27 @@
                 <div class="hightlights">
                     <div class="hightlights__container">
                         <div class="container__up">
-                            <p>Wind status</p>
-                            <h2 id="wind">7<span>mph</span></h2>
+                            <p class="container__up--tittle">Wind status</p>
+                            <div class="values">
+                                <h2 id="wind"></h2>
+                                <p>mph</p>
+                            </div>
+                            <div class="wsw">
+                                <div class="wsw__logo"><i class="fa-solid fa-location-arrow"></i></div>
+                                <p class="wsw__text">WSW</p>
+                            </div>
                         </div>
                         <div class="container__up">
-                            <p>Humidity</p>
-                            <h2 id="humidity"><span>%</span></h2>
+                            <p class="container__up--tittle">Humidity</p>
+                            <div class="values">
+                                <h2 id="humidity"></h2>
+                                <p>%</p>
+                            </div>
                         </div>
                     </div>
                     <div class="hightlights__container">
                         <div class="container__down">
-                            <p>Visibility</p>
+                            <p class="container__up--tittle">Visibility</p>
                             <div class="values">
                                 <h2 id="visibility">7</h2>
                                 <p><span>miles</span></p>

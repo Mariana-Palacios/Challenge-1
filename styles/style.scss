@@ -83,12 +83,24 @@
             background-color: $white;
             border: 1px solid $white;
             color: $dark-blue !important;
+            cursor: grab;
         }
         &__circle{
             border-radius: 50%;
+            border: 1px solid $grey;
             background-color: $grey;
             height: 40px;
             width: 40px;
+            i{
+                color: $white;
+                font-size: 25px;
+            }
+        }
+        &__circle:hover{
+            background-color: $white;
+            i{
+                color: $dark-blue;
+            }
         }
     }
     .main{
@@ -98,6 +110,7 @@
         width: 70%;
         .tittle{
             margin-left: 12%;
+            margin-bottom: 8px;
         }
         .degrees{
             display: flex;
@@ -129,6 +142,20 @@
                 &--img{
                     width: 56.44px;
                     height: 62px;
+                    margin: 15px 0px 25px 0px;
+                }
+                .weather__temperature{
+                    display: flex;
+                    flex-direction: row-reverse;
+                    &--ligth{
+                        color: $ligth-grey;
+                        margin:8px;
+                    }
+                    &--dark{
+                        color: $white;
+                        margin:8px;
+                        font-weight: 700;
+                    }
                 }
             }
             &__day:hover{
@@ -144,10 +171,14 @@
             flex-wrap: wrap;
             &__container{
                 display: flex;
-                padding: 48px 0px 48px 0px;
+                padding: 24px 0px 24px 0px;
+                h2{
+                    font-size: 50px;
+                    font-weight: bold;
+                }
                 .container__up{
                     width: 328px;
-                    height: 159px;
+                    height: 204px;
                     background-color: $blue;
                     margin-right: 48px;
                     display: flex;
@@ -155,8 +186,27 @@
                     align-items: center;
                     flex-direction: column; 
                     justify-content: center;
+                    &--tittle{
+                        margin-bottom: 15px;
+                        font-size: 16px;
+                    }
                     .values{
                         display: flex;
+                        p{
+                            font-size: 25px;
+                            margin-top: 10px;
+                        }
+                    }
+                    .wsw{
+                        margin-top: 25px;
+                        display: flex;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        background-color: $grey;
+                        &__logo{
+                            color:white;
+                        }
                     }
                 }
                 .container__down{
@@ -167,7 +217,11 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    flex-direction: column; 
+                    flex-direction: column;
+                    &--tittle{
+                        margin-bottom: 15px;
+                        font-size: 16px;
+                    } 
                     .values{
                         display: flex;
                     }

@@ -94,12 +94,25 @@
   background-color: #fff;
   border: 1px solid #fff;
   color: #100E1D !important;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 .container .button__circle {
   border-radius: 50%;
+  border: 1px solid #6E707A;
   background-color: #6E707A;
   height: 40px;
   width: 40px;
+}
+.container .button__circle i {
+  color: #fff;
+  font-size: 25px;
+}
+.container .button__circle:hover {
+  background-color: #fff;
+}
+.container .button__circle:hover i {
+  color: #100E1D;
 }
 .container .main {
   color: #fff;
@@ -109,6 +122,7 @@
 }
 .container .main .tittle {
   margin-left: 12%;
+  margin-bottom: 8px;
 }
 .container .main .degrees {
   display: flex;
@@ -121,6 +135,8 @@
   height: 40px;
   width: 40px;
   font-weight: 900;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 .container .main .degrees__c {
   color: #fff;
@@ -129,6 +145,8 @@
   height: 40px;
   width: 40px;
   font-weight: 900;
+  cursor: -webkit-grab;
+  cursor: grab;
   margin-right: 12px;
 }
 .container .main .weather {
@@ -152,6 +170,20 @@
 .container .main .weather__day--img {
   width: 56.44px;
   height: 62px;
+  margin: 15px 0px 25px 0px;
+}
+.container .main .weather__day .weather__temperature {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.container .main .weather__day .weather__temperature--ligth {
+  color: #E7E7EB;
+  margin: 8px;
+}
+.container .main .weather__day .weather__temperature--dark {
+  color: #fff;
+  margin: 8px;
+  font-weight: 700;
 }
 .container .main .weather__day:hover {
   background-color: #fff;
@@ -167,11 +199,15 @@
 }
 .container .main .hightlights__container {
   display: flex;
-  padding: 48px 0px 48px 0px;
+  padding: 24px 0px 24px 0px;
+}
+.container .main .hightlights__container h2 {
+  font-size: 50px;
+  font-weight: bold;
 }
 .container .main .hightlights__container .container__up {
   width: 328px;
-  height: 159px;
+  height: 204px;
   background-color: #1E213A;
   margin-right: 48px;
   display: flex;
@@ -180,8 +216,27 @@
   flex-direction: column;
   justify-content: center;
 }
+.container .main .hightlights__container .container__up--tittle {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
 .container .main .hightlights__container .container__up .values {
   display: flex;
+}
+.container .main .hightlights__container .container__up .values p {
+  font-size: 25px;
+  margin-top: 10px;
+}
+.container .main .hightlights__container .container__up .wsw {
+  margin-top: 25px;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #6E707A;
+}
+.container .main .hightlights__container .container__up .wsw__logo {
+  color: white;
 }
 .container .main .hightlights__container .container__down {
   width: 328px;
@@ -192,6 +247,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.container .main .hightlights__container .container__down--tittle {
+  margin-bottom: 15px;
+  font-size: 16px;
 }
 .container .main .hightlights__container .container__down .values {
   display: flex;
