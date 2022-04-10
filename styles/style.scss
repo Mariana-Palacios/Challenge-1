@@ -131,6 +131,9 @@
         display: flex;
         justify-content: space-between;
         padding: 42px;
+        @media screen and (max-width:600px){
+            padding: 18px;
+        }
         &__search{
             background-color: $grey;
             border: 1px solid $grey;
@@ -171,7 +174,8 @@
         width: 70%;
         @media screen and (max-width:600px){
             width: 100%;
-            height: 1718px;
+            // height: 1718px;
+            height: 1758px;
             padding: 52px 55px;
         }
         .tittle{
