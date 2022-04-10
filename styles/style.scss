@@ -46,7 +46,7 @@
             &__weather{
                 font-size: 36px !important;
                 font-weight: bold;
-                margin-bottom: 82px;
+                margin-bottom: 75px;
             }
             &__day{
                 font-size: 90px;
@@ -67,6 +67,14 @@
             }
             p{
                 font-weight: 600;
+            }
+            &__fecha{
+                color: $aside-grey;
+                margin-bottom: 20px;
+                .fa-solid.fa-circle{
+                    padding: 0px 10px;
+                    font-size: 4px;
+                }
             }
         }
         .weatherImg{

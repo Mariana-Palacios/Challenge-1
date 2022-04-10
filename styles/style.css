@@ -60,7 +60,7 @@
 .container .aside .information__weather {
   font-size: 36px !important;
   font-weight: bold;
-  margin-bottom: 82px;
+  margin-bottom: 75px;
 }
 .container .aside .information__day {
   font-size: 90px;
@@ -82,6 +82,14 @@
 }
 .container .aside .information p {
   font-weight: 600;
+}
+.container .aside .information__fecha {
+  color: #88869D;
+  margin-bottom: 20px;
+}
+.container .aside .information__fecha .fa-solid.fa-circle {
+  padding: 0px 10px;
+  font-size: 4px;
 }
 .container .aside .weatherImg {
   padding: 90px 0px;
