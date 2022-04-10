@@ -96,6 +96,9 @@
         padding: 42px 123px 25px 154px;
         background-color: $dark-blue;
         width: 70%;
+        .tittle{
+            margin-left: 12%;
+        }
         .degrees{
             display: flex;
             justify-content: flex-end;
@@ -147,12 +150,27 @@
                     height: 159px;
                     background-color: $blue;
                     margin-right: 48px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column; 
+                    justify-content: center;
+                    .values{
+                        display: flex;
+                    }
                 }
                 .container__down{
                     width: 328px;
                     height: 159px;
                     background-color: $blue;
                     margin-right: 48px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column; 
+                    .values{
+                        display: flex;
+                    }
                 }
             }
         }

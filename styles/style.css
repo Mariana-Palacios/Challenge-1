@@ -107,6 +107,9 @@
   background-color: #100E1D;
   width: 70%;
 }
+.container .main .tittle {
+  margin-left: 12%;
+}
 .container .main .degrees {
   display: flex;
   justify-content: flex-end;
@@ -171,10 +174,25 @@
   height: 159px;
   background-color: #1E213A;
   margin-right: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.container .main .hightlights__container .container__up .values {
+  display: flex;
 }
 .container .main .hightlights__container .container__down {
   width: 328px;
   height: 159px;
   background-color: #1E213A;
   margin-right: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .main .hightlights__container .container__down .values {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
