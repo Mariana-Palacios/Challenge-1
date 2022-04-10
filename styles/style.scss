@@ -329,6 +329,12 @@
                         margin-top: 15px;
                         background-color: $ligth-grey;
                         border-radius: 4px;
+                        &__progress{
+                            background-color: $yellow-bar;
+                            height: 8px;
+                            border-radius: 4px;
+                            z-index: 1;
+                        }
                     }
                     .progressPorcentage{
                         margin-top: 5px;

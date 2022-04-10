@@ -98,6 +98,7 @@ const weatherInformation = async(woeidUser , humidity , wind , visibility, press
 
     // adding today values
     humidity.innerHTML = weather[0]['humidity']
+    document.getElementById('pregressBar').style.width = `${weather[0]['humidity']}%`;
     wind.innerHTML = Math.trunc(weather[0]['wind_speed'])
     visibility.innerHTML = weather[0]['visibility'].toFixed(1)
     pressure.innerHTML = Math.trunc(weather[0]['air_pressure'])
