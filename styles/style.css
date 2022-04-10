@@ -115,6 +115,31 @@
     height: 810px;
   }
 }
+.container .aside__button .list {
+  margin-top: 58px;
+}
+.container .aside__button .list .location {
+  list-style: none;
+  color: #fff;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+}
+.container .aside__button .list .location .fa-solid.fa-angle-right {
+  color: #1E213A;
+}
+.container .aside__button .list .location:hover {
+  border: 1px solid #E7E7EB;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.container .aside__button .list .location:hover .fa-solid.fa-angle-right {
+  color: #E7E7EB;
+  position: absolute;
+  right: 10%;
+}
 .container .aside__button.is-active {
   padding: 20px 46px 0px 46px;
   transform: translate(0, 0%);
