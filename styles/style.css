@@ -47,7 +47,7 @@
 @media screen and (max-width: 600px) {
   .container .aside {
     width: 100%;
-    height: 810px;
+    height: 850px;
   }
 }
 .container .aside .information {
@@ -207,7 +207,7 @@
     margin: 35px 0px 0px -20px;
   }
   .container .main .degrees {
-    margin: 35px 0px 0px -20px;
+    margin: 5px 60px 0px 0px;
   }
 }
 .container .main .tittle {
