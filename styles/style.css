@@ -141,6 +141,9 @@
   position: absolute;
   right: 10%;
 }
+.container .aside__button .list .filter {
+  display: none;
+}
 .container .aside__button.is-active {
   padding: 20px 46px 0px 46px;
   transform: translate(0, 0%);
